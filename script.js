@@ -29,9 +29,11 @@ function generatePassword() {
     }
 
     let password = "";
+    
     for (let i = 0; i < length; i++) {
-       password += allChars.charAt(Math.floor(Math.random() * allChars.length));
+        password += allChars.charAt(Math.floor(Math.random() * allChars.length));
     }
+
     document.getElementById("copyBtn").innerText = password;
 }
 
