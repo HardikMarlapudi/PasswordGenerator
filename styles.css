@@ -1,0 +1,39 @@
+* {
+    background-color: #78d00c;
+}
+
+.border {
+    border: 5px solid;
+    border-radius: 1rem;
+}
+
+#title {
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#passwordGen, #passwordLength {
+    text-align: center;
+}
+
+#copyBtn {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 2rem;
+    padding: 5px 100px;
+    cursor: pointer;
+}
+
+#passwordSlider {
+    text-align: center;
+}
+
+#generatePassword {
+    margin: 1rem;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: blue;
+    border-radius: 1rem;
+    cursor: pointer;
+}

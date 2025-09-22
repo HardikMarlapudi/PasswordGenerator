@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/02ce3c4ccb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>PasswordGenerator</title>
+</head>
+<body>
+    <div class="border">
+    <h3 id="title">GENERATE A STRONG PASSWORD!</h3>
+    <center><button id="copyBtn" onclick="copy()">Copy</button></center>
+
+    <center>
+    <p id="passwordLength">Password Length: <span id="lengthValue">0</span></p>
+    <input type="range" id="passwordSlider" min="0" max="100" value="0" oninput="updateLengthValue(this.value)"><br>
+    
+    <input type="checkbox" id="uppercaseLetters">
+    <label>Include Uppercase Letters (A-Z)</label><br>
+
+    <input type="checkbox" id="lowercaseLetters">
+    <label>Include Lowercase Letters (a-z)</label><br>
+
+    <input type="checkbox" id="numbers">
+    <label>Include Numbers (0-9)</label><br>
+
+    <input type="checkbox" id="symbols">
+    <label>Include Symbols (@-$)</label><br>
+    </center>
+
+    <center><button id="generatePassword" onclick="generatePassword()">GENERATE PASSWORD</button></center>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
