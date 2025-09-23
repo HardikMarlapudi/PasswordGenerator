@@ -39,10 +39,15 @@ function generatePassword() {
 
 function copy() {
     const password = document.getElementById("copyBtn").innerText;
-    navigator.clipboard.writeText(password).then(() => {
-        alert("Password copied");
+    if (document.getElementById("copyBtn").innerText == "") {
+        alert("Please update your password");
         return;
-    })
+    } else {
+        navigator.clipboard.writeText(password).then(() => {
+            alert("Password copied");
+            return;
+        })
+    }
 }
 
 function updateLengthValue(val) {
