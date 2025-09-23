@@ -6,20 +6,19 @@ document.getElementById("numbers");
 document.getElementById("symbols");
 
 function generatePassword() {
-    const length = 10;
-    const includeuppercaseLetters = document.getElementById("uppercaseLetters").checked;
-    const includelowercaseLetters = document.getElementById("lowercaseLetters").checked;
+    const length = 10; // Fixed length of 10 characters
+    const includeuppercaseletters = document.getElementById("uppercaseLetters").checked;
+    const includelowercaseletters = document.getElementById("lowecaseLetters").checked;
     const includeNumbers = document.getElementById("numbers").checked;
     const includeSymbols = document.getElementById("symbols").checked;
-    
-    const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    const lowercase = "abcdefghijklmnopqrstuvwxyz";
+
+    const uppercaseletters = "ABCDEFGHIJKLMNOPQUSTUVWXYZ";
+    const lowercaseletters = "abcdefghijklmnopqrstuvwxyz";
     const numbers = "0123456789";
     const symbols = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
-
     let allChars = "";
-    if (includeuppercaseLetters) allChars += uppercase;
-    if (includelowercaseLetters) allChars += lowercase;
+    if (includeuppercaseletters) allChars += uppercaseletters;
+    if (includelowercaseletters) allChars += lowercaseletters;
     if (includeNumbers) allChars += numbers;
     if (includeSymbols) allChars += symbols;
 
