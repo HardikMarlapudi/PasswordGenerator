@@ -8,7 +8,7 @@ document.getElementById("symbols");
 function generatePassword() {
     const length = 10; // Fixed length of 10 characters
     const includeuppercaseletters = document.getElementById("uppercaseLetters").checked;
-    const includelowercaseletters = document.getElementById("lowecaseLetters").checked;
+    const includelowercaseletters = document.getElementById("lowercaseLetters").checked;
     const includeNumbers = document.getElementById("numbers").checked;
     const includeSymbols = document.getElementById("symbols").checked;
 
@@ -43,8 +43,8 @@ function copy() {
         return;
     } else {
         navigator.clipboard.writeText(password).then(() => {
-            alert("Password copied");
-            return;
+        alert("Password copied");
+        return;
         })
     }
 }
