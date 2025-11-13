@@ -27,6 +27,7 @@
 
 #passwordSlider {
     text-align: center;
+    cursor: pointer;
 }
 
 #generatePassword {
